@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting</title>
+    <link rel="shortcut icon" href="assets/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="controls" id="controls">
+        <div class="player1">
+            <p>Player 1</p><br>
+            <div>
+                Movement - WASD <br>
+                To kick - Space
+            </div>
+        </div>
+        <div class="player2">
+            <p>Player 2</p><br>
+            <div>
+                Movement - Arrows <br>
+                To kick - Enter
+            </div>
+        </div>
+        <button id="btn" class="btn">START</button>
+    </div>
+    <div class="container">
+        <div class="bars">
+            <div class="p-hp">
+                <div class="p-hp-bar"></div>
+                <div id="playerHP" class="p-hp-hpbar"></div>
+            </div>
+
+            <div id="timer" class="timer">60</div>
+            <div class="e-hp">
+                <div class="e-hp-bar"></div>
+                <div id="enemyHP" class="e-hp-hpbar"></div>
+            </div>
+        </div>
+        <div id="result" class="result">Player 1 wins</div>
+        <canvas></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+        integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/classes.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

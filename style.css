@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+canvas {
+    border: 5px solid black;
+}
+
+.bars {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.p-hp,
+.e-hp {
+    width: 100%;
+    position: relative;
+    border-top: 4px ghostwhite ridge;
+    border-bottom: 4px ghostwhite ridge;
+}
+
+.p-hp {
+    display: flex;
+    justify-content: flex-end;
+
+    border-left: 4px ghostwhite ridge;
+}
+
+.e-hp {
+    border-right: 4px ghostwhite ridge;
+}
+
+.p-hp-bar,
+.e-hp-bar {
+    background-color: transparent;
+    height: 25px;
+    width: 100%;
+    z-index: 0;
+}
+
+/* .p-hp-bar {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.e-hp-bar {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+} */
+
+.e-hp-hpbar {
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    /* border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem; */
+    z-index: 1;
+}
+
+.p-hp-hpbar {
+    background: red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    /* border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem; */
+    z-index: 1;
+}
+
+.timer {
+    background-color: transparent;
+    color: white;
+    border: 4px ghostwhite ridge;
+    height: 40px;
+    width: 60px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+
+.result {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    background-color: white;
+    padding: 5px;
+}
+
+.controls {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px;
+    font-size: 30px;
+}
+
+.btn {
+    width: 400px;
+    height: 100px;
+    border-radius: 2rem;
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: 125px;
+    transform: translate(-50%, -50%);
+}
